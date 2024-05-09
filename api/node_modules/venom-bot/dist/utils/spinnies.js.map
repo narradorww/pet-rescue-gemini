@@ -1,0 +1,1 @@
+{"version":3,"file":"spinnies.js","sourceRoot":"","sources":["../../src/utils/spinnies.ts"],"names":[],"mappings":";;;;;;AAAA,wDAAgC;AAEhC,IAAI,QAAQ,GAAa,IAAI,CAAC;AAE9B,SAAgB,WAAW,CAAC,OAA0B;IACpD,IAAI,CAAC,QAAQ,EAAE,CAAC;QACd,QAAQ,GAAG,IAAI,kBAAQ,CAAC,OAAO,CAAC,CAAC;IACnC,CAAC;IACD,OAAO,QAAQ,CAAC;AAClB,CAAC;AALD,kCAKC"}
