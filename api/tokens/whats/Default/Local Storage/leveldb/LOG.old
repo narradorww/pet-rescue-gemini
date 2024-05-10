@@ -1,2 +1,6 @@
-2024/05/09-17:30:15.084 22f8 Creating DB /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb since it was missing.
-2024/05/09-17:30:15.092 22f8 Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/MANIFEST-000001
+2024/05/09-17:49:35.079 2c3b Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/MANIFEST-000001
+2024/05/09-17:49:35.080 2c3b Recovering log #3
+2024/05/09-17:49:35.080 2c3b Reusing old log /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/000003.log 
+2024/05/09-19:19:46.022 2c3d Level-0 table #5: started
+2024/05/09-19:19:46.026 2c3d Level-0 table #5: 21420 bytes OK
+2024/05/09-19:19:46.029 2c3d Delete type=0 #3

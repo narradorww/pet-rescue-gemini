@@ -1,2 +1,3 @@
-2024/05/09-17:30:15.100 22fa Creating DB /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/shared_proto_db since it was missing.
-2024/05/09-17:30:15.107 22fa Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/shared_proto_db/MANIFEST-000001
+2024/05/09-17:49:35.089 2c3b Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/shared_proto_db/MANIFEST-000001
+2024/05/09-17:49:35.089 2c3b Recovering log #3
+2024/05/09-17:49:35.089 2c3b Reusing old log /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/shared_proto_db/000003.log 
