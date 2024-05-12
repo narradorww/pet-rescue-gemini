@@ -1,3 +1,6 @@
-2024/05/11-23:02:50.693 24437 Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/MANIFEST-000001
-2024/05/11-23:02:50.694 24437 Recovering log #45
-2024/05/11-23:02:50.694 24437 Reusing old log /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/000045.log 
+2024/05/11-23:09:56.338 24a44 Reusing MANIFEST /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/MANIFEST-000001
+2024/05/11-23:09:56.339 24a44 Recovering log #45
+2024/05/11-23:09:56.340 24a44 Reusing old log /home/rodrigo/Projetos/Alura/imersaoIA/pet-rescue-gemini/api/tokens/whats/Default/Local Storage/leveldb/000045.log 
+2024/05/11-23:10:56.840 24a46 Level-0 table #50: started
+2024/05/11-23:10:56.844 24a46 Level-0 table #50: 13377 bytes OK
+2024/05/11-23:10:56.846 24a46 Delete type=0 #45

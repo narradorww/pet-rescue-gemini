@@ -16,14 +16,16 @@ const chatModel = genAI.getGenerativeModel({
   },
 });
 
-let chatHistory = [];
+let ongoingChat;
+
+async function startChatSession() {
+  ongoingChat = await chatModel.startChat({ history: [] });
+}
 
 async function processImage(buffer, mimeType) {
   try {
     const enhancedBuffer = await sharp(buffer)
-      .resize(1024, null, {
-        fit: "inside",
-      })
+      .resize(1024, { fit: "inside" })
       .toBuffer();
 
     return {
@@ -43,20 +45,16 @@ async function handleChatInteraction(message, isImage = false) {
     const prompt = isImage
       ? "Analyze this image and describe the animal."
       : message.body;
-    chatHistory.push({
-      role: "user",
-      parts: [{ text: prompt }],
-    });
+    const sendMessageRequest = {
+      parts: [
+        {
+          text: prompt,
+        },
+      ],
+    };
 
-    const chat = chatModel.startChat({ history: chatHistory });
-    const result = await chat.sendMessage(prompt);
+    const result = await ongoingChat.sendMessage(sendMessageRequest);
     const response = await result.response;
-
-    // Update the history with the model's response
-    chatHistory.push({
-      role: "model",
-      parts: [{ text: response.text() }],
-    });
 
     return response.text();
   } catch (error) {
@@ -78,9 +76,10 @@ venom
       try {
         if (message.isMedia || message.body.startsWith("/9j/")) {
           const buffer = await client.decryptFile(message);
-          const base64Image = await processImage(buffer, message.mimetype);
+          const mimeType = message.mimetype;
+          const formattedFile = await processImage(buffer, mimeType);
           const responseText = await handleChatInteraction(
-            { body: base64Image },
+            { body: formattedFile },
             true
           );
           client.sendText(message.from, responseText);
@@ -95,3 +94,5 @@ venom
     });
   })
   .catch((error) => console.error("Error creating WhatsApp session:", error));
+
+startChatSession(); // Start the chat session when the bot starts
